@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="logo-hol">
+        <svg id="logo" width="412" height="77" viewBox="0 0 412 77" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!--<path d="M66.2727 38.0909C66.2727 45.6137 64.8637 52.0568 62.0455 57.4205C59.25 62.7614 55.4318 66.8523 50.5909 69.6932C45.7727 72.5341 40.3068 73.9546 34.1932 73.9546C28.0796 73.9546 22.6023 72.5341 17.7614 69.6932C12.9432 66.8296 9.12501 62.7273 6.30683 57.3864C3.51137 52.0227 2.11365 45.5909 2.11365 38.0909C2.11365 30.5682 3.51137 24.1364 6.30683 18.7955C9.12501 13.4318 12.9432 9.32957 17.7614 6.48866C22.6023 3.64775 28.0796 2.22729 34.1932 2.22729C40.3068 2.22729 45.7727 3.64775 50.5909 6.48866C55.4318 9.32957 59.25 13.4318 62.0455 18.7955C64.8637 24.1364 66.2727 30.5682 66.2727 38.0909ZM53.5568 38.0909C53.5568 32.7955 52.7273 28.3296 51.0682 24.6932C49.4318 21.0341 47.1591 18.2728 44.25 16.4091C41.3409 14.5228 37.9886 13.5796 34.1932 13.5796C30.3977 13.5796 27.0455 14.5228 24.1364 16.4091C21.2273 18.2728 18.9432 21.0341 17.2841 24.6932C15.6477 28.3296 14.8296 32.7955 14.8296 38.0909C14.8296 43.3864 15.6477 47.8637 17.2841 51.5228C18.9432 55.1591 21.2273 57.9205 24.1364 59.8068C27.0455 61.6705 30.3977 62.6023 34.1932 62.6023C37.9886 62.6023 41.3409 61.6705 44.25 59.8068C47.1591 57.9205 49.4318 55.1591 51.0682 51.5228C52.7273 47.8637 53.5568 43.3864 53.5568 38.0909Z" fill="#0D0D0D"/>
+            <path d="M122.241 3.18184H134.889V48.7955C134.889 53.7955 133.707 58.1932 131.344 61.9887C129.003 65.7841 125.707 68.75 121.457 70.8864C117.207 73 112.241 74.0568 106.56 74.0568C100.855 74.0568 95.8778 73 91.6278 70.8864C87.3778 68.75 84.0824 65.7841 81.7415 61.9887C79.4006 58.1932 78.2301 53.7955 78.2301 48.7955V3.18184H90.8778V47.7387C90.8778 50.6477 91.5142 53.2387 92.7869 55.5114C94.0824 57.7841 95.9006 59.5682 98.2415 60.8637C100.582 62.1364 103.355 62.7728 106.56 62.7728C109.764 62.7728 112.537 62.1364 114.878 60.8637C117.241 59.5682 119.06 57.7841 120.332 55.5114C121.605 53.2387 122.241 50.6477 122.241 47.7387V3.18184Z" fill="#0D0D0D"/>
+            <path d="M145.568 13.7841V3.18184H201.273V13.7841H179.693V73H167.148V13.7841H145.568Z" fill="#0D0D0D"/>
+            <path d="M249.955 22.375C249.636 19.3978 248.295 17.0796 245.932 15.4205C243.591 13.7614 240.545 12.9318 236.795 12.9318C234.159 12.9318 231.898 13.3296 230.011 14.125C228.125 14.9205 226.682 16 225.682 17.3637C224.682 18.7273 224.17 20.2841 224.148 22.0341C224.148 23.4887 224.477 24.75 225.136 25.8182C225.818 26.8864 226.739 27.7955 227.898 28.5455C229.057 29.2728 230.341 29.8864 231.75 30.3864C233.159 30.8864 234.58 31.3068 236.011 31.6478L242.557 33.2841C245.193 33.8977 247.727 34.7273 250.159 35.7728C252.614 36.8182 254.807 38.1364 256.739 39.7273C258.693 41.3182 260.239 43.2387 261.375 45.4887C262.511 47.7387 263.08 50.375 263.08 53.3978C263.08 57.4887 262.034 61.0909 259.943 64.2046C257.852 67.2955 254.83 69.7159 250.875 71.4659C246.943 73.1932 242.182 74.0568 236.591 74.0568C231.159 74.0568 226.443 73.2159 222.443 71.5341C218.466 69.8523 215.352 67.3978 213.102 64.1705C210.875 60.9432 209.67 57.0114 209.489 52.375H221.932C222.114 54.8068 222.864 56.8296 224.182 58.4432C225.5 60.0568 227.216 61.2614 229.33 62.0568C231.466 62.8523 233.852 63.25 236.489 63.25C239.239 63.25 241.648 62.8409 243.716 62.0228C245.807 61.1818 247.443 60.0228 248.625 58.5455C249.807 57.0455 250.409 55.2955 250.432 53.2955C250.409 51.4773 249.875 49.9773 248.83 48.7955C247.784 47.5909 246.318 46.5909 244.432 45.7955C242.568 44.9773 240.386 44.25 237.886 43.6137L229.943 41.5682C224.193 40.0909 219.648 37.8523 216.307 34.8523C212.989 31.8296 211.33 27.8182 211.33 22.8182C211.33 18.7046 212.443 15.1023 214.67 12.0114C216.92 8.92048 219.977 6.52275 223.841 4.8182C227.705 3.09093 232.08 2.22729 236.966 2.22729C241.92 2.22729 246.261 3.09093 249.989 4.8182C253.739 6.52275 256.682 8.89775 258.818 11.9432C260.955 14.9659 262.057 18.4432 262.125 22.375H249.955Z" fill="#0D0D0D"/>
+            <path d="M287.003 3.18184V73H274.355V3.18184H287.003Z" fill="#0D0D0D"/>
+            <path d="M297.631 13.7841V3.18184H353.335V13.7841H331.756V73H319.21V13.7841H297.631Z" fill="#0D0D0D"/>
+            
+            
+            <path d="M364.074 73V3.18184H409.483V13.7841H376.722V32.7387H407.131V43.3409H376.722V62.3978H409.756V73H364.074Z" fill="#0D0D0D"/>-->
+            
+            
+            <path d="M66.2727 38.0909C66.2727 45.6137 64.8637 52.0568 62.0455 57.4205C59.25 62.7614 55.4318 66.8523 50.5909 69.6932C45.7727 72.5341 40.3068 73.9546 34.1932 73.9546C28.0796 73.9546 22.6023 72.5341 17.7614 69.6932C12.9432 66.8296 9.12501 62.7273 6.30683 57.3864C3.51137 52.0227 2.11365 45.5909 2.11365 38.0909C2.11365 30.5682 3.51137 24.1364 6.30683 18.7955C9.12501 13.4318 12.9432 9.32957 17.7614 6.48866C22.6023 3.64775 28.0796 2.22729 34.1932 2.22729C40.3068 2.22729 45.7727 3.64775 50.5909 6.48866C55.4318 9.32957 59.25 13.4318 62.0455 18.7955C64.8637 24.1364 66.2727 30.5682 66.2727 38.0909ZM53.5568 38.0909C53.5568 32.7955 52.7273 28.3296 51.0682 24.6932C49.4318 21.0341 47.1591 18.2728 44.25 16.4091C41.3409 14.5228 37.9886 13.5796 34.1932 13.5796C30.3977 13.5796 27.0455 14.5228 24.1364 16.4091C21.2273 18.2728 18.9432 21.0341 17.2841 24.6932C15.6477 28.3296 14.8296 32.7955 14.8296 38.0909C14.8296 43.3864 15.6477 47.8637 17.2841 51.5228C18.9432 55.1591 21.2273 57.9205 24.1364 59.8068C27.0455 61.6705 30.3977 62.6023 34.1932 62.6023C37.9886 62.6023 41.3409 61.6705 44.25 59.8068C47.1591 57.9205 49.4318 55.1591 51.0682 51.5228C52.7273 47.8637 53.5568 43.3864 53.5568 38.0909Z" stroke="var(--btn-clr)" stroke-width="4"/>
+            
+            <path d="M122.241 3.18184H134.889V48.7955C134.889 53.7955 133.707 58.1932 131.344 61.9887C129.003 65.7841 125.707 68.75 121.457 70.8864C117.207 73 112.241 74.0568 106.56 74.0568C100.855 74.0568 95.8778 73 91.6278 70.8864C87.3778 68.75 84.0824 65.7841 81.7415 61.9887C79.4006 58.1932 78.2301 53.7955 78.2301 48.7955V3.18184H90.8778V47.7387C90.8778 50.6477 91.5142 53.2387 92.7869 55.5114C94.0824 57.7841 95.9006 59.5682 98.2415 60.8637C100.582 62.1364 103.355 62.7728 106.56 62.7728C109.764 62.7728 112.537 62.1364 114.878 60.8637C117.241 59.5682 119.06 57.7841 120.332 55.5114C121.605 53.2387 122.241 50.6477 122.241 47.7387V3.18184Z" stroke="var(--btn-clr)" stroke-width="4"/>
+            <path d="M145.568 13.7841V3.18184H201.273V13.7841H179.693V73H167.148V13.7841H145.568Z" stroke="var(--btn-clr)" stroke-width="4"/>
+            <path d="M249.955 22.375C249.636 19.3978 248.295 17.0796 245.932 15.4205C243.591 13.7614 240.545 12.9318 236.795 12.9318C234.159 12.9318 231.898 13.3296 230.011 14.125C228.125 14.9205 226.682 16 225.682 17.3637C224.682 18.7273 224.17 20.2841 224.148 22.0341C224.148 23.4887 224.477 24.75 225.136 25.8182C225.818 26.8864 226.739 27.7955 227.898 28.5455C229.057 29.2728 230.341 29.8864 231.75 30.3864C233.159 30.8864 234.58 31.3068 236.011 31.6478L242.557 33.2841C245.193 33.8977 247.727 34.7273 250.159 35.7728C252.614 36.8182 254.807 38.1364 256.739 39.7273C258.693 41.3182 260.239 43.2387 261.375 45.4887C262.511 47.7387 263.08 50.375 263.08 53.3978C263.08 57.4887 262.034 61.0909 259.943 64.2046C257.852 67.2955 254.83 69.7159 250.875 71.4659C246.943 73.1932 242.182 74.0568 236.591 74.0568C231.159 74.0568 226.443 73.2159 222.443 71.5341C218.466 69.8523 215.352 67.3978 213.102 64.1705C210.875 60.9432 209.67 57.0114 209.489 52.375H221.932C222.114 54.8068 222.864 56.8296 224.182 58.4432C225.5 60.0568 227.216 61.2614 229.33 62.0568C231.466 62.8523 233.852 63.25 236.489 63.25C239.239 63.25 241.648 62.8409 243.716 62.0228C245.807 61.1818 247.443 60.0228 248.625 58.5455C249.807 57.0455 250.409 55.2955 250.432 53.2955C250.409 51.4773 249.875 49.9773 248.83 48.7955C247.784 47.5909 246.318 46.5909 244.432 45.7955C242.568 44.9773 240.386 44.25 237.886 43.6137L229.943 41.5682C224.193 40.0909 219.648 37.8523 216.307 34.8523C212.989 31.8296 211.33 27.8182 211.33 22.8182C211.33 18.7046 212.443 15.1023 214.67 12.0114C216.92 8.92048 219.977 6.52275 223.841 4.8182C227.705 3.09093 232.08 2.22729 236.966 2.22729C241.92 2.22729 246.261 3.09093 249.989 4.8182C253.739 6.52275 256.682 8.89775 258.818 11.9432C260.955 14.9659 262.057 18.4432 262.125 22.375H249.955Z" stroke="var(--btn-clr)" stroke-width="4"/>
+            <path d="M287.003 3.18184V73H274.355V3.18184H287.003Z" stroke="var(--btn-clr)" stroke-width="4"/>
+            <path d="M297.631 13.7841V3.18184H353.335V13.7841H331.756V73H319.21V13.7841H297.631Z" stroke="var(--btn-clr)" stroke-width="4"/>
+            <path d="M364.074 73V3.18184H409.483V13.7841H376.722V32.7387H407.131V43.3409H376.722V62.3978H409.756V73H364.074Z" stroke="var(--btn-clr)" stroke-width="4"/>
+            </svg>
+            
+    </div>
+    <div class="banner"><h4>Get Extra 10% off Now</h4></div>
+    <nav class="navbar">
+        <div class="brand-title">
+           <img src="https://global-uploads.webflow.com/642b6b162caa975fdc75b942/642b6b162caa9747a975c463_outsite-logo-2022-black.svg">
+        </div>
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+  
+        <div class="navbar-links">
+          <ul>
+              <li><a href="#">Location</a></li>
+              <li><a href="#">What is Outside</a></li>
+              <li><a href="#">Book Now</a></li>
+              <li><a href="#" class="nav-button">Become A member</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <header>
+        <div class="circ">
+            <div class="circ_logo"></div>
+            <div class="circ_text">
+              <p>Expert vetted apartments- just for you-</p>
+            </div>
+         </div>
+         <div class="hero-holder">
+            <div class="hero-text">
+                <h1><span>Beautiful</span> places to stay designed for remote workers.</h1>
+                <p>Members-only content added monthly</p>
+                <p>Members-only content added monthly</p>
+                <p>Members-only content added monthly</p>
+   
+            </div>
+            <div class="hero-image">
+              <img src="/Images/1.jpg">
+              <img src="/Images/1.jpg">
+              <img src="/Images/1.jpg"><img src="/Images/1.jpg"><img src="/Images/1.jpg"><img src="/Images/1.jpg">
+
+            </div>
+         </div>
+         
+      </header>
+      <section class="maquee-section">
+        <div direction="left loop" class="maq-div">
+            <img src="./Images/bloomberg.png" loading="lazy" alt="">
+            <img src="./Images/Clip path group.png" loading="lazy" alt="">
+            <img src="./Images/cnb.png" loading="lazy" alt="">
+            <img src="./Images/forbes.png" loading="lazy" alt="">
+            <img src="./Images/guard.png" loading="lazy" alt="">
+            <img src="./Images/qtx.png" loading="lazy" alt="">
+            <img src="./Images/rete.png" loading="lazy" alt="">
+            <img src="./Images/guard.png" loading="lazy" alt="">
+            <img src="./Images/qtx.png" loading="lazy" alt="">
+            <img src="./Images/rete.png" loading="lazy" alt="">
+        </div>
+      </section>
+      <section class="why section">
+         <div>
+            
+            <h2>Why Become a member?</h2>
+            <div class="card-holder">
+                <div class="card">
+                    <img src="./Images/stay.png" loading="lazy" alt="">
+                    <div class="card-desc">
+                        <p class="tag">PLACES TO STAY</p>
+                        <h3 class="card-tag">Make yourself at home</h3>
+                        <p>Stay in a private bedroom, studio, or apartment in Outsite Spaces around the world.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="./Images/bring.jpg" loading="lazy" alt="">
+                    <div class="card-desc">
+                        <p class="tag">WORK REMOTELY</p>
+                        <h3 class="card-tag">Bring your work with you</h3>
+                        <p> Get focused and stay productive in work friendly spaces with fast WiFi..</p>
+                    </div>
+                </div>
+
+
+                <div class="card">
+                    <img src="./Images/fun.jpg" loading="lazy" alt="">
+                    <div class="card-desc">
+                        <p class="tag">COMMUNITY</p>
+                        <h3 class="card-tag">Get together</h3>
+                        <p>Meet other remote workers and creatives at Outsite Spaces, events, and the online Member Hub.</p>
+                    </div>
+                </div>
+            </div>
+         </div>
+
+      </section>
+      
+
+
+    <section class="why section">
+        <div>
+           
+           <div class="card-holder">
+               <div class="card">
+                   <img src="./Images/1.jpg" loading="lazy" alt="">
+                   <div class="card-desc">
+                       <h3 class="card-tag">Travel solo or together</h3>
+                       <p>Stay in a private bedroom, studio, or apartment in Outsite Spaces around the world.</p>
+                   </div>
+                   <button class="sec seventy">Book your next stay</button>
+               </div>
+
+               <div class="card">
+                   <img src="./Images/2.jpg" loading="lazy" alt="">
+                   <div class="card-desc">
+                      <h3 class="card-tag">Travel solo or together</h3>
+                      <p>Stay in a private bedroom, studio, or apartment in Outsite Spaces around the world.</p>
+                   </div>
+                   <button class="sec seventy">Book your next stay</button>
+               </div>
+
+               <div class="card">
+                <img src="./Images/3.jpg" loading="lazy" alt="">
+                    <div class="card-desc">
+                      <h3 class="card-tag">Travel solo or together</h3>
+                      <p>Stay in a private bedroom, studio, or apartment in Outsite Spaces around the world.</p>
+                    </div>
+                    <button class="sec seventy">Book your next stay</button>
+               </div>
+
+
+
+               
+
+
+               
+           </div>
+        </div>
+
+     </section>
+
+     
+     <section>
+        <div class="carousel">
+            <div class="carousel-controls">
+              <input id="1" type="radio" name="controls" checked />
+              <input id="2" type="radio" name="controls" />
+              <input id="3" type="radio" name="controls" />
+              <input id="4" type="radio" name="controls" />
+              <input id="5" type="radio" name="controls" />
+              <input id="6" type="radio" name="controls" />
+              <div class="dots">
+                <label for="1"></label>
+                <label for="2"></label>
+                <label for="3"></label>
+                <label for="4"></label>
+                <label for="5"></label>
+                <label for="6"></label>
+              </div>
+              <div class="carousel-images">
+
+                <div class="carousel-image">
+                    <div>
+                        <h5>FROM OUR MEMBERS</h5>
+                       <p>
+                          "I made some great friends, saw an awesome city, AND got my work done. Now I want to visit all the locations!"
+                       </p>
+                    </div>
+                    
+                    <div>
+                        <img src="https://global-uploads.webflow.com/642b6b162caa975fdc75b942/642b6b162caa976d5575bee1_Danny.png">
+                        <div class="names">
+                            <p>Danny J John</p>
+                            <p>Promoter</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="carousel-image">
+                    <div>
+                        <h5>FROM OUR MEMBERS</h5>
+                       <p>
+                          "I made some great friends, saw an awesome city, AND got my work done. Now I want to visit all the locations!"
+                       </p>
+                    </div>
+                    
+                    <div>
+                        <img src="https://global-uploads.webflow.com/642b6b162caa975fdc75b942/642b6b162caa976d5575bee1_Danny.png">
+                        <div class="names">
+                            <p>Danny J John</p>
+                            <p>Promoter</p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="carousel-image">
+                    <div>
+                        <h5>FROM OUR MEMBERS</h5>
+                       <p>
+                          "I made some great friends, saw an awesome city, AND got my work done. Now I want to visit all the locations!"
+                       </p>
+                    </div>
+                    
+                    <div>
+                        <img src="https://global-uploads.webflow.com/642b6b162caa975fdc75b942/642b6b162caa976d5575bee1_Danny.png">
+                        <div class="names">
+                            <p>Danny J John</p>
+                            <p>Promoter</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="carousel-image">
+                    <div>
+                        <h5>FROM OUR MEMBERS</h5>
+                       <p>
+                          "I made some great friends, saw an awesome city, AND got my work done. Now I want to visit all the locations!"
+                       </p>
+                    </div>
+                    
+                    <div>
+                        <img src="https://global-uploads.webflow.com/642b6b162caa975fdc75b942/642b6b162caa976d5575bee1_Danny.png">
+                        <div class="names">
+                            <p>Danny J John</p>
+                            <p>Promoter</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="carousel-image">
+                    <div>
+                        <h5>FROM OUR MEMBERS</h5>
+                       <p>
+                          "I made some great friends, saw an awesome city, AND got my work done. Now I want to visit all the locations!"
+                       </p>
+                    </div>
+                    
+                    <div>
+                        <img src="https://global-uploads.webflow.com/642b6b162caa975fdc75b942/642b6b162caa976d5575bee1_Danny.png">
+                        <div class="names">
+                            <p>Danny J John</p>
+                            <p>Promoter</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-image">
+                    <div>
+                        <h5>FROM OUR MEMBERS</h5>
+                       <p>
+                          "I made some great friends, saw an awesome city, AND got my work done. Now I want to visit all the locations!"
+                       </p>
+                    </div>
+                    
+                    <div>
+                        <img src="https://global-uploads.webflow.com/642b6b162caa975fdc75b942/642b6b162caa976d5575bee1_Danny.png">
+                        <div class="names">
+                            <p>Danny J John</p>
+                            <p>Promoter</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                
+
+
+
+
+
+                
+                </div>
+              </div>
+            </div>
+          </div>
+     </section>
+
+
+     <section>
+        <article class="cards">
+            <header>
+              <div>
+                <p class="tag">New Members</p>
+                <h2>Find your home on the coast, in the mountains, or in the city.</h2>
+              </div>
+              <div class="buttons">
+                <button class="active" onclick="selectList(this, 0)">USA</button>
+                <button onclick="selectList(this, 1)">Europe</button>
+                <button onclick="selectList(this, 2)">Africa</button>
+              </div>
+            </header>
+            <div class="tables">
+              <table class="active">
+                <tbody class="active card-holder">
+                  <tr>
+                    <td>
+                      <img class="avatar" src="/Images/us.jpeg" />
+                    </td>
+                    <td>
+                      <h3>Santiago</h3>
+                      <p>Califonia</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img class="avatar" src="/Images/jan-folwarczny-LLGRiTroses-unsplash.jpg" loading="lazy"/>
+                    </td>
+                    <td>
+                      <h3>Santiago</h3>
+                      <p>Califonia</p>
+                    </td>
+                    
+                    
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <img class="avatar" src="./Images/jan-folwarczny-ZXBPMnNVtlE-unsplash.jpg" loading="lazy" />
+                    </td>
+                    <td>
+                      <h3>Santiago</h3>
+                      <p>Califonia</p>
+                    </td>
+                    
+                    
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <img class="avatar" src="./Images/nirmal-rajendharkumar-2mG8IdPFenU-unsplash.jpg" loading="lazy" />
+                    </td>
+                    <td>
+                      <h3>Santiago</h3>
+                      <p>Califonia</p>
+                    </td>
+                    
+                    
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <img class="avatar" src="./Images/renan-kamikoga-2bZeEZx7Kaw-unsplash.jpg" loading="lazy" />
+                    </td>
+                    <td>
+                      <h3>Santiago</h3>
+                      <p>Califonia</p>
+                    </td>
+                    
+                    
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <img class="avatar" src="./Images/rezaul-karim-102abqkKhbY-unsplash.jpg" loading="lazy"/>
+                    </td>
+                    <td>
+                      <h3>Santiago</h3>
+                      <p>Califonia</p>
+                    </td>
+                    
+                    
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <img class="avatar" src="./Images/square-lab-elcdzDbzYY4-unsplash.jpg" loading="lazy" />
+                    </td>
+                    <td>
+                      <h3>Santiago</h3>
+                      <p>Califonia</p>
+                    </td>
+                    
+                    
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <img class="avatar" src="./Images/toomas-tartes-41gqn1q-tqc-unsplash.jpg" loading="lazy" />
+                    </td>
+                    <td>
+                      <h3>Santiago</h3>
+                      <p>Califonia</p>
+                    </td>
+                    
+                    
+                  </tr>
+                  
+                    
+                   
+                  </tr>
+                </tbody>
+              </table>
+              <table class="active">
+                <tbody class="active card-holder">
+                  <tr>
+                    <td>
+                      <img class="avatar" src="/Images/1.jpg" />
+                    </td>
+                    <td>
+                      <h3>Santiago</h3>
+                      <p>Califonia</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img class="avatar" src="./Images/2.jpg" />
+                    </td>
+                    <td>
+                      <h3>Santiago</h3>
+                      <p>Califonia</p>
+                    </td>
+                    
+                    
+                  </tr>
+                  <tr>
+                    <td>
+                      <img class="avatar" src="/Images/3.jpg" />
+                    </td>
+                    <td>
+                      <h3>Santiago</h3>
+                      <p>Califonia</p>
+                    </td>
+                    
+                   
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <img class="avatar" src="/Images/3.jpg" />
+                    </td>
+                    <td>
+                      <h3>Santiago</h3>
+                      <p>Califonia</p>
+                    </td>
+                    
+                   
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <img class="avatar" src="/Images/3.jpg" />
+                    </td>
+                    <td>
+                      <h3>Santiago</h3>
+                      <p>Califonia</p>
+                    </td>
+                    
+                   
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <img class="avatar" src="/Images/3.jpg" />
+                    </td>
+                    <td>
+                      <h3>Santiago</h3>
+                      <p>Califonia</p>
+                    </td>
+                    
+                   
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <img class="avatar" src="/Images/3.jpg" />
+                    </td>
+                    <td>
+                      <h3>Santiago</h3>
+                      <p>Califonia</p>
+                    </td>
+                    
+                   
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <img class="avatar" src="/Images/3.jpg" />
+                    </td>
+                    <td>
+                      <h3>Santiago</h3>
+                      <p>Califonia</p>
+                    </td>
+                    
+                   
+                  </tr>
+                </tbody>
+              </table>
+              <table class="active">
+                <tbody class="active card-holder">
+                  <tr>
+                    <td>
+                      <img class="avatar" src="/Images/1.jpg" />
+                    </td>
+                    <td>
+                      <h3>Santiago</h3>
+                      <h4>Califonia</h4>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img class="avatar" src="./Images/2.jpg" />
+                    </td>
+                    <td>
+                      <h3>Santiago</h3>
+                      <h4>Califonia</h4>
+                    </td>
+                    
+                    
+                  </tr>
+                  <tr>
+                    <td>
+                      <img class="avatar" src="/Images/3.jpg" />
+                    </td>
+                    <td>
+                      <h3>Bo Larsson</h3>
+                      <h4>Chief Designer</h4>
+                    </td>
+                    
+                   
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </article>
+     </section>
+
+
+
+     <section class="why section">
+        <div>
+           <h2>From our blog</h2>
+           <div class="card-holder">
+               <div class="card">
+                   <img src="./Images/4.png" loading="lazy" alt="">
+                   <div class="card-desc">
+                       <p class="tag">Blog</p>
+                       <h3 class="card-tag">Make yourself at home</h3>
+                       <p>Stay in a private bedroom, studio, or apartment in Outsite Spaces around the world.</p>
+                   </div>
+               </div>
+
+               <div class="card">
+                   <img src="./Images/5.jpeg" loading="lazy" alt="">
+                   <div class="card-desc">
+                       <p class="tag">Blog</p>
+                       <h3 class="card-tag">Bring your work with you</h3>
+                       <p> Get focused and stay productive in work friendly spaces with fast WiFi..</p>
+                   </div>
+               </div>
+
+
+               <div class="card">
+                   <img src="./Images/6.jpg" loading="lazy" alt="">
+                   <div class="card-desc">
+                       <p class="tag">Blog</p>
+                       <h3 class="card-tag">Get together</h3>
+                       <p>Meet other remote workers and creatives at Outsite Spaces, events, and the online Member Hub.</p>
+                   </div>
+               </div>
+           </div>
+        </div>
+
+     </section>
+</body>
+</html>
